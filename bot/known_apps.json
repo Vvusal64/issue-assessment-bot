@@ -1,0 +1,62 @@
+{
+  "_comment": "Catalog of OEM-relevant apps. Each entry has a 'name' and either a single 'package' (legacy) or a 'packages' list of {package, version_prefixes}. version_prefixes lets the catalog disambiguate between multiple Zoom variants based on the version detected in the ticket: 1.0.x → Forvia Zoom for Cars, 5.x → Stellantis Zoom, 6.7.x/7.0.x → Zoom for Mercedes. To extend: add a new entry — no code changes required. To register a new variant for an existing app: add it to the 'packages' list with the version prefixes that uniquely identify it.",
+  "apps": [
+    {
+      "name": "Zoom",
+      "aliases": [],
+      "packages": [
+        {"package": "com.forvia.zoomapp", "version_prefixes": ["1.0.", "1.1."]},
+        {"package": "us.zoom.videomeetings", "version_prefixes": ["5."]},
+        {"package": "us.zoom.mercedesbenz", "version_prefixes": ["6.7.", "7.0."]}
+      ]
+    },
+    {
+      "name": "Zoom for Cars",
+      "aliases": ["Zoom Cars", "Zoom for Auto", "Zoom Auto"],
+      "packages": [
+        {"package": "com.forvia.zoomapp.push_notifications", "version_prefixes": ["1.0.", "1.1."]},
+        {"package": "com.forvia.zoomapp.rsedemo", "version_prefixes": ["1.0.", "1.1."]},
+        {"package": "com.forvia.zoomapp"}
+      ]
+    },
+    {"name": "Deezer", "package": "deezer.android.app"},
+    {"name": "Spotify", "package": "com.spotify.music"},
+    {"name": "YouTube", "package": "com.google.android.youtube", "aliases": ["YouTube Auto"]},
+    {"name": "YouTube Music", "package": "com.google.android.apps.youtube.music"},
+    {"name": "Google Maps", "package": "com.google.android.apps.maps"},
+    {"name": "Waze", "package": "com.waze"},
+    {"name": "Amazon Music", "package": "com.amazon.mp3"},
+    {"name": "Netflix", "package": "com.netflix.mediaclient"},
+    {"name": "TIDAL", "package": "com.tidal.android.tidal", "aliases": ["Tidal"]},
+    {"name": "TuneIn Radio", "package": "tunein.player", "aliases": ["TuneIn"]},
+    {"name": "Pandora", "package": "com.pandora.android"},
+    {"name": "Apple Music"},
+    {"name": "Microsoft Teams", "package": "com.microsoft.teams", "aliases": ["MS Teams", "Teams for Cars"]},
+    {"name": "WhatsApp", "package": "com.whatsapp"},
+    {"name": "WebEx", "package": "com.cisco.webex.meetings", "aliases": ["Cisco Webex", "Webex Meetings"]},
+    {"name": "Bild TV", "package": "com.mekmedia.bild.auto"},
+    {"name": "Car Eats Car 3", "package": "com.smokoko.careatscar3_appning"},
+    {"name": "Blanco", "package": "eimycarolaym.blanco"},
+    {"name": "Audible", "package": "com.audible.application", "requires_context": true},
+    {"name": "Radioline", "package": "com.radioline.android.radioline.auto", "aliases": ["Radioplayer"]},
+    {"name": "Tagesschau", "package": "de.tagesschau", "aliases": []},
+    {"name": "Tagesschau Automotive", "package": "de.tagesschau.automotive", "aliases": ["Tagesschau Auto"]},
+    {"name": "Nextory", "package": "com.gtl.nextory"},
+    {"name": "Meteored", "package": "com.meteored.android"},
+    {"name": "Sportschau", "package": "de.wdr.sportschau.android"},
+    {"name": "Der Spiegel", "package": "de.spiegel.android.automotive.mmo", "aliases": ["Spiegel", "Manager Magazin"]},
+    {"name": "Unblock It", "package": "com.marketjs.unblockit", "aliases": ["UnblockIt"]},
+    {"name": "CandyBlast", "package": "com.king.candyblast", "aliases": ["Candy Blast"]},
+    {"name": "Deutschlandfunk", "package": "de.deutschlandfunk.dlfaudiothek", "aliases": ["Deutschlandfunk Audiothek", "DLF Audiothek"]},
+    {"name": "Disney+", "package": "com.disney.disneyplus", "aliases": ["Disney Plus"]},
+    {"name": "Wetteronline", "package": "de.wetteronline.wetterapp", "aliases": ["WetterOnline"]},
+    {"name": "Radio Format", "package": "it.streamingmedia.radioformat", "aliases": ["RadioFormat", "Radio-Format", "Streamingmedia"]},
+    {"name": "YouTube for Cars", "package": "com.forvia.youtube", "aliases": ["YouTube Cars"]},
+    {"name": "Audioteka", "package": "com.audioteka"},
+    {"name": "Storytel", "package": "com.storytel.base"},
+    {"name": "BookBeat", "package": "com.bookbeat.android"},
+    {"name": "Radio.com", "package": "radio.fm.player"},
+    {"name": "iHeartRadio", "package": "com.clearchannel.iheartradio.controller"},
+    {"name": "SoundCloud", "package": "com.soundcloud.android"}
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "_comment": "Curated snapshot of the Appning Admin Portal — used as the authoritative source of truth when no live Admin Portal API is configured (ADMIN_PORTAL_URL / ADMIN_PORTAL_TOKEN). Each entry mirrors exactly what the Certification page shows: app name, package, publisher (when known), and the list of approved versions. When the bot finishes its extraction, it cross-checks against this snapshot — if a package is present here, the snapshot's name and version list override the bot's guesses. If a package is NOT here, the bot downgrades confidence and the Slack notification asks for manual validation. To extend: copy an entry from the Admin Portal Certification screen.",
+  "apps": [
+    {
+      "name": "Radio Format",
+      "package": "it.streamingmedia.radioformat",
+      "publisher": "LUIGI PETRUCCIO",
+      "versions": ["1.2.0", "1.0.1", "1.0.0"]
+    },
+    {
+      "name": "Zoom for Cars",
+      "package": "com.forvia.zoomapp.push_notifications",
+      "publisher": "Forvia",
+      "versions": [
+        "1.0.8.9RC13",
+        "1.0.8.9RC11",
+        "1.0.8.6RC7.Push_notifications",
+        "1.0.8.6RC4.Push_notifications",
+        "1.0.8.6RC3.Push_notifications",
+        "1.0.8.6RC2.Push_notifications",
+        "1.0.8.6.Push_notifications"
+      ]
+    },
+    {
+      "name": "Zoom for Cars",
+      "package": "com.forvia.zoomapp.rsedemo",
+      "publisher": "Forvia",
+      "versions": ["1.0.8.9", "1.0.8.7"]
+    },
+    {
+      "name": "Zoom for Cars",
+      "package": "com.forvia.zoomapp",
+      "publisher": "Forvia",
+      "versions": []
+    },
+    {
+      "name": "Bild TV",
+      "package": "com.mekmedia.bild.auto",
+      "publisher": "Mekmedia",
+      "versions": ["3.0.0.5", "3.1.13"]
+    },
+    {
+      "name": "Der Spiegel",
+      "package": "de.spiegel.android.automotive.mmo",
+      "publisher": "Spiegel",
+      "versions": []
+    },
+    {
+      "name": "Deezer",
+      "package": "deezer.android.app",
+      "publisher": "Deezer",
+      "versions": []
+    },
+    {
+      "name": "Tagesschau Automotive",
+      "package": "de.tagesschau.automotive",
+      "publisher": "ARD-aktuell",
+      "versions": []
+    },
+    {
+      "name": "Unblock It",
+      "package": "com.marketjs.unblockit",
+      "publisher": "MarketJS",
+      "versions": []
+    }
+  ]
+}
